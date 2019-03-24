@@ -1,0 +1,56 @@
+#!/bin/bash
+
+#config_my_vim is an automated vim configuration script that configures your vim to my vim configuration
+#LOL
+
+isExist(){
+	local param=$1
+	param="which $param"
+	if [ "$param" = "" ]
+	then
+		echo 0
+	else
+		echo 1
+	fi
+}
+
+installByAction(){
+	local app=$1
+	local act=$2
+	local installed=$(isExist app)
+	if [ $installed -eq 1 ]
+	then
+		echo 1
+	else
+		eval act
+		local result=$(isExist app)
+		echo $result
+	fi
+}
+
+#check if VIM is installed
+vim_installed=$(installByAction "vim" "sudo apt install vim")
+echo "vim_installed=$vim_installed"
+if [ $vim_installed -eq 0 ]
+then
+	echo "Installation failed"
+	exit 1
+fi
+
+#install vim-plugin
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+#install git
+git_installed=$(installByAction "git" "sudo apt install git")
+echo "git_installed=$git_installed"
+if [ $git_installed -eq 0 ]
+then
+	echo "Installation failed"
+	exit 1
+fi
+
+clone my configuration to ~/.vim folder
+cd ~
+git clone https://github.com/dlshle/Vim_Config
+cd ..
+mv Vim_Config .vim
