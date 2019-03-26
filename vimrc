@@ -57,8 +57,19 @@ set showmatch		" Show matching brackets.
 set smartcase		" Do smart case matching
 set incsearch		" Incremental search
 set cursorline		" highlight current line
-hi CursorLine cterm=NONE ctermbg=darkred ctermfg=white 
-nnoremap H :set cursorline!<CR>	"type H to turn on/off highlighting line
+
+"Red bg White fg
+"hi CursorLine cterm=NONE ctermbg=darkred ctermfg=white 
+
+"Only Red bg w/ row number
+hi CursorLine cterm=NONE 
+hi CursorLineNR ctermbg=red 
+
+"type H to turn on/off highlighting line
+nnoremap H :set cursorline!<CR>	
+"Type esc to esc the search highlighting
+nnoremap <esc><esc> :silent! nohls<cr> 
+
 
 "set autowrite		" Automatically save before commands like :next and :make
 "set hidden		" Hide buffers when they are abandoned
