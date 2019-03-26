@@ -67,9 +67,9 @@ hi CursorLineNR ctermbg=red
 
 "type H to turn on/off highlighting line
 nnoremap H :set cursorline!<CR>	
-"Type esc to esc the search highlighting
-nnoremap <esc><esc> :silent! nohls<cr> 
 
+" Press Space to turn off highlighting and clear any message already displayed.
+:nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 "set autowrite		" Automatically save before commands like :next and :make
 "set hidden		" Hide buffers when they are abandoned
@@ -79,8 +79,3 @@ nnoremap <esc><esc> :silent! nohls<cr>
 if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
 endif
-
-call plug#begin('~/.vim/plugins')
-Plug 'leafgarland/typescript-vim'
-call plug#end()
-
