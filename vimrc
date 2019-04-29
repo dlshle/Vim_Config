@@ -71,6 +71,19 @@ nnoremap H :set cursorline!<CR>
 " Press Space to turn off highlighting and clear any message already displayed.
 :nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
+"netrw file explorer
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 25
+
+"auto open netcw when opening vim
+"augroup ProjectDrawer
+  "autocmd!
+  "autocmd VimEnter * :Vexplore
+"augroup END
+
 "set autowrite		" Automatically save before commands like :next and :make
 "set hidden		" Hide buffers when they are abandoned
 "set mouse=a		" Enable mouse usage (all modes)
