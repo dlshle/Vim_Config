@@ -58,6 +58,9 @@ set smartcase		" Do smart case matching
 set incsearch		" Incremental search
 set cursorline		" highlight current line
 
+"set column limit to 80 chars
+set colorcolumn=80
+
 "Red bg White fg
 "hi CursorLine cterm=NONE ctermbg=darkred ctermfg=white 
 
@@ -83,6 +86,9 @@ let g:netrw_winsize = 25
   "autocmd!
   "autocmd VimEnter * :Vexplore
 "augroup END
+
+"set color scheme
+"colorscheme slate
 
 "set autowrite		" Automatically save before commands like :next and :make
 "set hidden		" Hide buffers when they are abandoned
