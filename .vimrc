@@ -112,3 +112,7 @@ set tags=tags
 
 " spell checking
 set spell
+
+" relative line numbers
+set rnu
+" set nornu to disable
