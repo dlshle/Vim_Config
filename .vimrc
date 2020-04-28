@@ -1,7 +1,7 @@
 " All system-wide defaults are set in $VIMRUNTIME/debian.vim and sourced by
 " the call to :runtime you can find below.  If you wish to change any of those
 " settings, you should do it in this file (/etc/vim/vimrc), since debian.vim
-" will be overwritten everytime an upgrade of the vim packages is performed.
+" will be overwritten every time an upgrade of the vim packages is performed.
 " It is recommended to make changes after sourcing debian.vim since it alters
 " the value of the 'compatible' option.
 
@@ -61,6 +61,14 @@ set cursorline		" highlight current line
 "set column limit to 80 chars
 set colorcolumn=80
 
+"set tap space
+" make each tap to consist of 4 spaces and size of an indent to be 4
+" softtabstop makes a tab to be combination of spaces
+" smarttab detects all spaced tabs and make them into actual tabs when editing
+set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
+"set ts=2
+"set shiftwidth=2
+
 "Red bg White fg
 "hi CursorLine cterm=NONE ctermbg=darkred ctermfg=white 
 
@@ -98,3 +106,9 @@ let g:netrw_winsize = 25
 if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
 endif
+
+"set ctags
+set tags=tags
+
+" spell checking
+set spell

@@ -1,8 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/home/dlshle'
-let g:netrw_dirhist_2='/home/dlshle/Documents'
-let g:netrw_dirhist_3='/home/dlshle/Documents/ICPC-Templates'
-let g:netrw_dirhist_4='/home/dlshle'
-let g:netrw_dirhist_5='/home/dlshle/Documents/Bash'
-let g:netrw_dirhist_6='/home/dlshle'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/home/dlshle/.vim'
