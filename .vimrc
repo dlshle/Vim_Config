@@ -58,8 +58,8 @@ set smartcase		" Do smart case matching
 set incsearch		" Incremental search
 set cursorline		" highlight current line
 
-"set column limit to 80 chars
-set colorcolumn=80
+"set column limit to 120 chars
+set colorcolumn=120
 
 "set tap space
 " make each tap to consist of 4 spaces and size of an indent to be 4
