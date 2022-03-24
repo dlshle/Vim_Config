@@ -74,7 +74,7 @@ set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
 
 "Only Red bg w/ row number
 hi CursorLine cterm=NONE 
-hi CursorLineNR ctermbg=red 
+hi CursorLineNR ctermbg=blue
 
 "type H to turn on/off highlighting line
 nnoremap H :set cursorline!<CR>	
@@ -111,7 +111,7 @@ endif
 set tags=tags
 
 " spell checking
-set spell
+" set spell
 
 " relative line numbers
 set rnu
