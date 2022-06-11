@@ -116,3 +116,6 @@ set tags=tags
 " relative line numbers
 set rnu
 " set nornu to disable
+
+" Use new regular expression engine
+set re=0
