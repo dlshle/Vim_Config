@@ -164,3 +164,6 @@ call plug#end()
 
 nmap gr :GoReferrers<CR> " go to references for go files
 nmap gi :GoImplements<CR> " go to implementations for an interface method decl
+nmap tr :TsuReferences<CR> " go to references for ts files
+nmap ti :TsuImplementation<CR> " go to implementations for ts files
+
