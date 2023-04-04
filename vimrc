@@ -120,6 +120,9 @@ set rnu
 " Use new regular expression engine
 set re=0
 
+" Display status bar at the bottom
+set laststatus=2
+
 call plug#begin()
 " The default plugin directory will be as follows:
 "   - Vim (Linux/macOS): '~/.vim/plugged'
@@ -128,8 +131,6 @@ call plug#begin()
 " You can specify a custom plugin directory by passing it as the argument
 "   - e.g. `call plug#begin('~/.vim/plugged')`
 "   - Avoid using standard Vim directory names like 'plugin'
-"   :PlugInstall to install all plugins
-"   :PlugClean to clean unused plugins
 
 " Make sure you use single quotes
 
