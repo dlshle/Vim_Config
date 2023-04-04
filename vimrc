@@ -152,8 +152,11 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'maxmellon/vim-jsx-pretty'   " JS and JSX syntax
 Plug 'jparise/vim-graphql'        " GraphQL syntax
 
-Plug 'Vimjas/vim-python-pep8-indent' " Python syntax
 Plug 'Quramy/tsuquyomi' " ts completion
+
+Plug 'vim-airline/vim-airline' " airline status bar
+
+Plug 'vim-scripts/SuperTab' " super tab for completions
 
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
