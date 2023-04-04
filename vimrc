@@ -163,3 +163,4 @@ call plug#end()
 "   syntax off            " Disable syntax highlighting
 
 nmap gr :GoReferrers<CR> " go to references for go files
+nmap gi :GoImplements<CR> " go to implementations for an interface method decl
